@@ -34,7 +34,6 @@
 
   <body>
 
-    <!--Navbar-->
     <nav class="navbar navbar-expand-lg">
 
       <div class="container">
@@ -42,30 +41,35 @@
         <!-- Navbar brand -->
         <a class="navbar-brand" href="index.html">jamie</a>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
         <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-
+        <div class="desktop">
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">work</span>
-              </a>
+              <a class="nav-link" href="index.html">work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">about</a>
+              <a class="nav-link" href="about.html">about</a>
             </li>
-
           </ul>
-      </div>
+        </div>
+
+        <div class="mobile">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a class="nav-link" href="index.html">work</a>
+              <a class="nav-link" href="#">resume</a>
+              <a class="nav-link" href="about.html">about</a>
+
+            </div>
+          </div>
+        </div>
 
     </nav>
 
@@ -247,8 +251,8 @@
                 <div class="project-text">From the survey participants, I reached out to 3 individuals to interview. I found the main reasons why they used cloud storage and what they liked about it, but it was harder to discuss what problems they had with it because there was no major issues. From the surveys and interviews, two personas emerged. The common goals were efficiency and accessibility, meaning users want to quickly access their files on all devices. These are the main themes to keep in mind while designing and developing.</div>
               </div>
               <div class="img-container">
-                <img src="img/personas-karen.png" class="img-survey">
-                <img src="img/personas-samuel.png" class="img-survey">
+                <img src="img/personas-karen.png" class="img-persona">
+                <img src="img/personas-samuel.png" class="img-persona">
                 <button class="main-button btn btn-primary">View User Personas</button>
               </div>
             </div>
@@ -467,5 +471,17 @@
         </li>
       </ul>
     </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.display = "initial";
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+
+    </script>
   </body>
 </html>

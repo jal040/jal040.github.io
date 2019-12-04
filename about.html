@@ -37,13 +37,20 @@
       <!-- Navbar brand -->
       <a class="navbar-brand" href="index.html">jamie</a>
 
+      <!-- Collapse button -->
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <!-- Collapsible content -->
-      <div class="desktop">
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">work</a>
+            <a class="nav-link" href="index.html">work</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">resume</a>
@@ -51,21 +58,9 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">about</a>
           </li>
+
         </ul>
-      </div>
-
-      <div class="mobile">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a class="nav-link" href="index.html">work</a>
-            <a class="nav-link" href="#">resume</a>
-            <a class="nav-link" href="about.html">about</a>
-
-          </div>
-        </div>
-      </div>
+    </div>
 
   </nav>
   <!--/.Navbar-->
@@ -256,19 +251,7 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript"></script>
 
-  <script>
-  function openNav() {
-    document.getElementById("myNav").style.display = "initial";
-    document.getElementById("myNav").style.height = "100%";
-  }
-
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
-
-
-  </script>
 </body>
 </html>

@@ -10,9 +10,6 @@ body {
   font-weight: 300 !important;
 }
 
-.container {
-
-}
 
 #intro {
   height: 70%;
@@ -61,9 +58,7 @@ body {
   display: inline-grid;
 }
 
-.emoji {
-  font-size: 100px;
-}
+
 .mask-notely {
   height: 100%;
   /* background-color: white; */
@@ -230,7 +225,7 @@ footer.mdl-mini-footer > ul {
   margin-left: 5%;
 }
 
-.img-survey {
+.img-persona {
   display: inline-block;
   width: 40%;
   margin: 40px auto;
@@ -482,7 +477,7 @@ ol > li::before {
 
 .rect-survey {
   background-color: #FFFFFF;
-  width: 1100px;
+  width: 800px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   grid-gap: 5rem;
@@ -552,9 +547,59 @@ ol > li::before {
   }
 
   /* NAV BAR */
+  .desktop {
+    display: none;
+  }
+
   .navbar-nav {
     text-align: center;
   }
+
+  #myNav {
+    display: none;
+  }
+
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
 
   /* NOTELY */
   #notely {
@@ -642,8 +687,8 @@ ol > li::before {
     width: 340px;
     margin-bottom: .5rem;
   }
-  .img-survey{
-    width: 340px;
+  .img-persona {
+    width: 400px;
     margin: 1rem auto;
   }
 
@@ -722,13 +767,188 @@ ol > li::before {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 700px) {
+  /* NAV */
+  .mobile {
+    display: none;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  /* HOME PAGE */
+  h4 {
+    font-size: 16px;
+  }
+
+  .mb-2 {
+      font-size: 30px;
+  }
+
+  .emoji {
+    font-size: 50px;
+  }
+
+
+  /* NOTELY */
+  .widgets {
+    width: 520px;
+  }
+  .widget h5 {
+    font-size: 20px !important;
+    line-height: 30px;
+  }
+  li {
+    font-size: 17px;
+    line-height:
+  }
+
+  .problem {
+    display: block;
+  }
+
+    .problem-content {
+      padding: 1rem;
+      width: 540px;
+      margin: auto;
+    }
+
+    .img-landing {
+      width: 540px;
+      display: block;
+      margin: auto;
+      position: initial;
+    }
+
+    .project-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .project-text {
+      font-size: 20px;
+      line-height: 31px;
+      margin-bottom: 1rem;
+    }
+
+    .text-container {
+      width: 540px;
+      padding: 1rem;
+    }
+
+    .chapter-title {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    .chapter {
+      padding-top: 3rem;
+      margin-left: 2rem;
+      margin: 1rem auto 3rem 0;
+    }
+
+    .rect-survey {
+      width: 540px;
+    }
+
+    .img-container {
+      margin-bottom: 2rem;
+    }
+    .img-comp {
+      width: 340px;
+      margin-bottom: .5rem;
+    }
+
+    .img-persona {
+      width: 340px;
+      margin: 1rem auto;
+    }
+
+    .img-flow {
+      width: 540px;
+      margin: 1rem auto;
+    }
+
+    .img-wf {
+      width: 540px;
+    }
+
+    .wireframe-section {
+      padding: 2rem 0;
+    }
+
+    .wireframe-container {
+      padding: 0;
+    }
+
+    .u-test {
+      padding: 0 0 2rem 0;
+    }
+
+    .mood-problem-content {
+      width: 540px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    .img-mood {
+      display: block;
+      width: 540px;
+      margin: auto;
+      padding: 0;
+    }
+
+    .img-logo {
+      display: block;
+      width: 540px;
+      margin: auto;
+    }
+
+    .img-brand {
+      display: block;
+      width: 15%;
+      margin: 0 auto;
+
+    }
+
+    .hifi {
+      padding: 1rem;
+    }
+
+    .ab-test {
+      padding-top: 0;
+    }
+
+    .ab-text {
+      padding-bottom: 5rem;
+    }
+
+    .img-ab {
+      width: 540px;
+      margin-bottom: 1rem;
+    }
+
+    .test-title {
+      line-height: 30px;
+      margin-bottom: 1rem;
+    }
+
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  /* HOME PAGE */
+  h4 {
+    font-size: 1.5rem;
+  }
 
+  .mb-2 {
+      font-size: 50px;
+  }
+
+  .emoji {
+    font-size: 100px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
