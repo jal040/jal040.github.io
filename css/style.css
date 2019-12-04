@@ -1015,6 +1015,9 @@ justify-content: center;
   .emoji {
     font-size: 100px;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
