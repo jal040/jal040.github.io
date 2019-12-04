@@ -28,8 +28,7 @@
 </head>
 <body>
 
-  <!-- Start your project here-->
-  <!--Navbar-->
+
   <nav class="navbar navbar-expand-lg">
 
     <div class="container">
@@ -37,20 +36,13 @@
       <!-- Navbar brand -->
       <a class="navbar-brand" href="index.html">jamie</a>
 
-      <!-- Collapse button -->
-      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="basicExampleNav">
-
+      <div class="desktop">
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">work</span>
-            </a>
+            <a class="nav-link" href="index.html">work</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">resume</a>
@@ -58,200 +50,143 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">about</a>
           </li>
-
         </ul>
-    </div>
+      </div>
 
-  </nav>
-  <!--/.Navbar-->
+      <div class="mobile">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a class="nav-link" href="index.html">work</a>
+            <a class="nav-link" href="#">resume</a>
+            <a class="nav-link" href="about.html">about</a>
 
-      <div id="intro" class="view">
-
-        <div class="mask-intro">
-
-          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-
-            <div class="row d-flex justify-content-center text-center width">
-
-              <div class="col-md-10">
-              <!-- Heading -->
-              <h2 class="display-4 font-weight-bold pt-5 mb-2">Hi, I'm Jamie</h2>
-              <span class="emoji">💁🏻💛🐶</span>
-              <br>
-
-              <!-- Description -->
-              <h4 class="my-4">A user experience designer and part time developer with interests in immersive computing, healthcare, and emerging technologies. <br><br>I am able to take ideas from concept to wireframe to prototype to production.</h4>
-
-              <div class="see-work">
-                <a class="work-link" href="#work">See my latest work</a>
-                <i class="fas fa-caret-down"></i>
-              </div>
-            </div>
-            </div>
           </div>
-
         </div>
       </div>
-      <!--Main layout-->
-      <main class="mt-5">
-          <div class="container">
 
-              <section id="work">
+    </nav>
 
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center mb-4">
-                    <!--Grid column-->
-                    <div class="col-md-6">
+    <div id="about-into" class="view">
 
-                        <!-- Description -->
-                        <div class="card m-5" style="width: 32rem;">
-                          <div class="view overlay">
-                            <img src="img/home-notely.png" class="img-fluid" alt="">
-                            <a href="notely.html">
-                              <div class="mask rgba-white-slight"></div>
-                            </a>
-                          </div>
-                          <div class="card-body">
-                            <h4 class="card-title">Verity</h4>
-                            <h5>Verity Design System</h5>
-                            <p class="card-text">Created a design system for designers and developers at Verity.<br>  <br></p>
-                            <a href="notely.html" class="btn btn-primary">Button</a>
-                          </div>
-                        </div>
+      <div class="mask-intro">
 
-                    </div>
-                    <div class="col-md-6">
-                      <!--Card-->
-                      <div class="card m-5" >
-                        <div class="view overlay">
-                          <img src="img/home-notely.png" class="img-fluid" alt="">
-                          <a href="notely.html">
-                            <div class="mask rgba-white-slight"></div>
-                          </a>
-                        </div>
-                        <div class="card-body">
-                          <h4 class="card-title">Notely</h4>
-                          <h5>A simple note-taking app</h5>
-                          <p class="card-text">Designed a SaaS product that makes it that easy to take down notes, save content, and collaborate with family and friends.</p>
-                          <a href="notely.html" class="btn btn-primary">View Case Study</a>
-                        </div>
-                      </div>
+        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
 
-                    </div>
-                    <!--Grid column-->
+          <div class="row d-flex justify-content-center text-center width">
 
-                </div>
-
-                <!--SECOND ROW-->
-                <div class="row d-flex justify-content-center mb-4">
-                    <!--Grid column-->
-                    <div class="col-md-6">
-
-                        <!-- SND CRAFTY -->
-                        <div class="card m-5">
-                          <div class="view overlay">
-                            <img src="img/home-snd.png" class="img-fluid" alt="">
-                            <a href="#">
-                              <div class="mask rgba-white-slight"></div>
-                            </a>
-                          </div>
-                          <div class="card-body">
-                            <h4 class="card-title">Sunday Night Dinner</h4>
-                            <h5>Craft Services, Done Right!</h5>
-                            <p class="card-text">Redesigned and developed the website for Sunday Night Dinner, a craft services company based in Hollywood. Increased traffic and sales by 20%.<br>  <br></p>
-                            <a href="#" class="btn btn-primary">View Case Study</a>
-                          </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card m-5">
-                        <div class="view overlay">
-                          <img src="img/home-performance.png" class="img-fluid" alt="">
-                          <a href="#">
-                            <div class="mask rgba-white-slight"></div>
-                          </a>
-                        </div>
-                        <div class="card-body">
-                          <h4 class="card-title">Performance.gov</h4>
-                          <h5>A White House website</h5>
-                          <p class="card-text">Redesigned the website, Performance.gov, which informs the public of the Federal agencies’ progress in cutting waste, streamlining the government, and improving performance.</p>
-                          <a href="#" class="btn btn-primary">View Case Study</a>
-                        </div>
-
-                      </div>
-                    </div>
+            <div class="col-md-10">
+              <!-- Heading -->
+              <h2 class="display-4 font-weight-bold pt-5 mb-2">Hello again! I'm Jamie</h2>
 
 
-                </div>
+              <!-- Description -->
+              <h4 class="about-text">I’m a designer with a background in human computer interaction and computer science. I've always loved to solve problems with unique solutions. </h4>
 
-              </section>
-
-
-              <!--Section: Contact-->
-              <section id="contact">
-
-
-
-              </section>
-              <!--Section: Contact-->
-
-          </div>
-      </main>
-      <!--Main layout-->
-
-      <footer class="mdl-mini-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mb-5 flex-center">
-                <ul class="list-unstyled list-inline text-center">
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-fb mx-1">
-                      <i class="fab fa-facebook-f"> </i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-tw mx-1">
-                      <i class="fab fa-twitter"> </i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-gplus mx-1">
-                      <i class="fab fa-google-plus-g"> </i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-li mx-1">
-                      <i class="fab fa-linkedin-in"> </i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-dribbble mx-1">
-                      <i class="fab fa-dribbble"> </i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <img src="img/about/me.jpeg" class="img-me">
             </div>
           </div>
         </div>
 
+      </div>
+    </div>
+    <!--Main layout-->
+    <main class="mt-5">
+      <div class="container">
 
-      </footer>
+        <section>
 
-  <!-- End your project here-->
+          <div class="about-section">
+            <article class="about-article young">
+              <div class="about-content">
+                <div class="about-title">When I was young</div>
+                <div class="about-text">I had always equated creativity with natural talent and I firmly believed I did not have that talent. I used to think that only certain gifted people could create beautiful things and so I steered clear of art-related activities. Math and science were the subjects I excelled at but they didn’t interest me career wise. </div>
+              </div>
+              <img src="img/about/baby.jpg" class="img-about">
+            </article>
+          </div>
 
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+          <div class="about-section">
+            <article class="about-article young">
+              <div class="about-content">
+                <div class="about-title">Entering undergraduate</div>
+                <div class="about-text">I was excited at all the possibilities ahead of me. I dabbled in the thought of pre-med but I quickly realized I didn’t have the passion for medicine. One day I stumbled upon the term “user experience design” for the first time ever and I knew that this was what I was looking for. Even though I was skeptical about the “design” part at first, I decided to research how to become an artist. To my relief, I found that art is a skill more than anything else, which can be strengthened and practiced on! My mindset has changed from “I can’t because I’m not talented” to “I can because I will learn”.</div>
+              </div>
+              <img src="img/about/gradpic.jpg" class="img-about">
+            </article>
+          </div>
 
-</body>
-</html>
+          <div class="about-section">
+            <article class="about-article young">
+              <div class="about-content">
+                <div class="about-title">Now</div>
+                <div class="about-text">I’m thankful for the invaluable insights I’ve gained from being more naturally academic and building my artistic side. From my unique combination of education and experience, I have and continue to develop my problem solving skills. As an avid book worm, my empathy and perspective have only grown wider and deeper. As the designated family event planner, I find joy in putting together enjoyable experiences for everyone. As a designer, I explore possibilities and dissect problems to find the best solution.</div>
+              </div>
+              <img src="img/about/snow.jpeg" class="img-about">
+            </article>
+          </div>
+
+        </section>
+
+
+
+      </div>
+    </main>
+    <!--Main layout-->
+
+    <footer class="mdl-mini-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mb-5 flex-center">
+              <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </footer>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+  </body>
+  </html>
