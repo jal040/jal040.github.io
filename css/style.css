@@ -140,7 +140,6 @@ footer.mdl-mini-footer > ul {
   margin: auto;
 }
 
-
 .nav-items li {
   float: right;
   padding: 20px 2%;
@@ -667,6 +666,7 @@ text-align: center;
 
 
 
+
   /* NOTELY */
   #notely {
     height: 70%;
@@ -1104,6 +1104,17 @@ text-align: center;
     width: 700px;
   }
 
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-li {
+    font-size: 26px;
+  }
+  
+  .cc {
+    font-size: 15px;
+  }
 
 }
 
@@ -1278,6 +1289,19 @@ text-align: center;
   .about-content{
     padding: 2rem 2rem;
   }
+
+  .footer-title {
+    font-size: 22px;
+  }
+
+  .footer-li {
+    font-size: 30px;
+  }
+
+
+
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
