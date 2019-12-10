@@ -868,7 +868,20 @@ text-align: center;
   .emoji {
     font-size: 70px;
   }
-
+  
+  #intro {
+    height: 100%;
+  }
+  
+  .work-title {
+    font-size: 30px;
+  }
+  
+  .work-subtitle {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
   /* NAV BAR */
   .desktop {
     display: none;
@@ -884,6 +897,10 @@ text-align: center;
 
   #myNav {
     display: none;
+  }
+  
+  .nav-link {
+    margin-left: 0;
   }
 
   .overlay {
@@ -934,8 +951,6 @@ text-align: center;
   .footer-title {
     text-align: center;
   }
-
-
 
 
   /* NOTELY */
@@ -1113,9 +1128,14 @@ text-align: center;
 
   /* ABOUT */
   #about-intro {
-    height: 70%;
+    height: 85%;
   }
 
+  .about-container {
+    padding: 0 2rem;
+    width: 93%;
+  }
+  
   .about-text {
     font-size: 17px;
     line-height: 28px;
@@ -1128,7 +1148,8 @@ text-align: center;
     display: block;
   }
   .about-content {
-    width: 350px;
+    width: 100%;
+    padding: 0;
   }
 
   .img-about {
@@ -1139,7 +1160,6 @@ text-align: center;
   }
 
   .container {
-    width: 500px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
