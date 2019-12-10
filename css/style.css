@@ -870,7 +870,7 @@ text-align: center;
   }
   
   #intro {
-    height: 100%;
+    height: 85%;
   }
   
   .work-title {
@@ -962,6 +962,14 @@ text-align: center;
 
   .mask-notely {
     height: 90%;
+  }
+  
+  .title {
+    margin-top: 5rem;
+  }
+  
+  .view h3 {
+    line-height: 38px;
   }
 
   /* SECTION */
@@ -1133,7 +1141,7 @@ text-align: center;
 
   .about-container {
     padding: 0 2rem;
-    width: 93%;
+    width: 93% !important;
   }
   
   .about-text {
