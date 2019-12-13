@@ -6,7 +6,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Jamie Lee</title>
   <link rel="stylesheet" href="styles/reset.css">
-
+  <!-- MY ICON -->
+  <link rel="icon" href="img/about/smile.png" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -16,6 +17,7 @@
 
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400|Nunito+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/e490bfc80e.js" crossorigin="anonymous"></script>
@@ -26,65 +28,63 @@
 
   <!-- Start your project here-->
   <!--Navbar-->
-  <nav class="navbar navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">jamie</a>
-      <div class="desktop container">
+  <div class="nav">
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="index.html"><img src="img/about/smile.png">jamie</a> -->
+        <a class="navbar-brand" href="index.html"><img src="img/about/smile.png" class="jam"></a>
+        <div class="desktop container">
 
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">about</a>
-          </li>
-        </ul>
-      </div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="mobile">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a class="nav-link" href="index.html">work</a>
-            <a class="nav-link" href="#">resume</a>
-            <a class="nav-link" href="about.html">about</a>
+        <div class="mobile">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a class="nav-link" href="index.html">work</a>
+              <a class="nav-link" href="#">resume</a>
+              <a class="nav-link" href="about.html">about</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+  </div>
 
 
-    <div id="intro" class="view">
 
-      <div class="mask-intro">
 
         <div class="container-intro">
 
           <div class="row-intro">
 
-            <div class="col">
               <!-- Heading -->
-              <h2 class="heading mb-2">Hi, I'm Jamie</h2>
-              <span class="emoji">💁🏻💛🐶</span>
+              <h2 class="heading mb-2" id="name"></h2>
+
               <br>
 
               <!-- Description -->
-              <h4 class="my-4">A user experience designer and part time developer with interests in immersive computing, healthcare, and emerging technologies. <br><br>I am able to take ideas from concept to wireframe to prototype to production.</h4>
+              <h4 class="my-4" id="names">A bright designer, a proficient coder, a clever problem-solver, a passionate dog mom, and a fearless explorer. <br><br>Feel free to <a href="mailto:jamielee3136@gmail.com" target="_blank">shoot me an email</a> or <a href="https://www.linkedin.com/in/jamielee3136/" target="_blank">link up with me!</a></h4>
 
               <div class="see-work">
                 <a class="work-link" href="#work">See my latest work</a>
                 <i class="fas fa-caret-down"></i>
               </div>
-            </div>
+
           </div>
         </div>
 
-      </div>
-    </div>
 
 
     <section class="work">
@@ -112,7 +112,7 @@
               <div class="year">2017<span>&#183;</span>Redesign, Rebranding & Development</div>
               <div class="work-title">Sunday Night Dinner</div>
               <div class="work-subtitle">Craft Services Done Right!</div>
-              <div class="work-body">Redesigned and developed the website for Sunday Night Dinner, a craft services company based in Hollywood. Increased traffic and sales by 20%.</div>
+              <div class="work-body">Redesigned and developed the website for a craft services company based in Hollywood. Increased traffic and sales by 20%.</div>
             </div>
           </div>
         </a>
@@ -126,7 +126,7 @@
               <div class="year">2017<span>&#183;</span>User Research & Redesign</div>
               <div class="work-title">Performance.gov</div>
               <div class="work-subtitle">A White House website</div>
-              <div class="work-body">Redesigned the website, Performance.gov, which informs the public of the Federal agencies’ progress in cutting waste, streamlining the government, and improving performance.</div>
+              <div class="work-body">Redesigned Performance.gov, which informs the public of the Federal agencies’ progress in cutting waste, streamlining the government, and improving performance.</div>
             </div>
           </div>
         </a>
@@ -148,27 +148,17 @@
               </div>
               <ul class="footer-ul">
                 <li class="footer-li">
-                  <a class="social">
-                    <i class="fab fa-facebook-f"> </i>
+                  <a class="social" href="mailto:jamielee3136@gmail.com">
+                    <i class="far fa-envelope"></i>
                   </a>
                 </li>
                 <li class="footer-li">
-                  <a class="social">
-                    <i class="fab fa-twitter"> </i>
-                  </a>
-                </li>
-                <li class="footer-li">
-                  <a class="social">
-                    <i class="fab fa-google-plus-g"> </i>
-                  </a>
-                </li>
-                <li class="footer-li">
-                  <a class="social">
+                  <a class="social" href="https://www.linkedin.com/in/jamielee3136/" target="_blank">
                     <i class="fab fa-linkedin-in"> </i>
                   </a>
                 </li>
                 <li class="footer-li">
-                  <a class="social">
+                  <a class="social" href="https://dribbble.com/jama_lee" target="_blank">
                     <i class="fab fa-dribbble"> </i>
                   </a>
                 </li>
@@ -182,14 +172,6 @@
 
     <!-- End your project here-->
 
-    <!-- jQuery -->
-    <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
-    <!-- Bootstrap tooltips -->
-    <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
-    <!-- MDB core JavaScript -->
-    <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
     <!-- Your custom scripts (optional) -->
     <!-- <script type="text/javascript" src="main.js"></script> -->
 
@@ -202,6 +184,20 @@
     function closeNav() {
       document.getElementById("myNav").style.height = "0%";
     }
+
+    var i = 0;
+    var txt = 'Hi, I\'m Jamie!';
+    var speed = 90;
+
+    function type(){
+      if(i<txt.length){
+        document.getElementById("name").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(type,speed);
+      }
+    }
+
+    window.onload = type();
 
   </script>
 </body>
