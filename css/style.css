@@ -867,8 +867,17 @@ text-align: center;
     font-size: 70px;
   }
 
-  .my-4 {
-    width: 100%;
+  #intro {
+    height: 85%;
+  }
+
+  .work-title {
+    font-size: 30px;
+  }
+
+  .work-subtitle {
+    font-size: 20px;
+    margin-top: 5px;
   }
 
   /* NAV BAR */
@@ -886,6 +895,10 @@ text-align: center;
 
   #myNav {
     display: none;
+  }
+
+  .nav-link {
+    margin-left: 0;
   }
 
   .overlay {
@@ -938,8 +951,6 @@ text-align: center;
   }
 
 
-
-
   /* NOTELY */
   #notely {
     height: 70%;
@@ -949,6 +960,14 @@ text-align: center;
 
   .mask-notely {
     height: 90%;
+  }
+
+  .title {
+    margin-top: 5rem;
+  }
+
+  .view h3 {
+    line-height: 38px;
   }
 
   /* SECTION */
