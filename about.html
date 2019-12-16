@@ -57,6 +57,8 @@
             </div>
           </div>
         </div>
+
+      </div>
       </nav>
   </div>
 
@@ -157,6 +159,31 @@
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript"></script>
 
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "initial";
+          document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+
+        var i = 0;
+        var txt = 'Hi, I\'m Jamie!';
+        var speed = 90;
+
+        function type(){
+          if(i<txt.length){
+            document.getElementById("name").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(type,speed);
+          }
+        }
+
+        window.onload = type();
+
+      </script>
 
   </body>
   </html>
