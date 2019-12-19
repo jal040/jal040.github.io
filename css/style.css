@@ -1542,7 +1542,7 @@ text-align: center;
     }
 
     .intro {
-      width: 800px;
+      max-width: 1000px;
       padding-bottom: 8rem;
     }
 
@@ -1563,10 +1563,9 @@ text-align: center;
     .img-landing {
       max-width: 500px;
       min-width: 300px;
-      width: 36%;
-      margin-right: 5rem;
+      width: 45%;
       margin-top: 5rem;
-      position: absolute;
+      float: left;
       display: block;
       right: 1rem;
       box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
