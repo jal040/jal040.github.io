@@ -1,0 +1,68 @@
+#snd-cover {
+  height: 70%;
+  background-size: 600px 500px !important;
+  background: url(../img/snd/sndcover.png) center center fixed;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  background: url(../img/snd/sndcover1.png);
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.snd-h2 {
+  font-size: 30px;
+  padding-top: 7%;
+}
+
+.project-text > ul {
+  list-style: initial;
+}
+
+.quote {
+  border-left: 1px solid #455363;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .project-text > ul {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .project-text > ul {
+    padding: 0 3rem;
+  }
+
+  .project-text > li {
+    line-height: 35px;
+
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
