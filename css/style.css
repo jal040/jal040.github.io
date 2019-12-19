@@ -412,6 +412,34 @@ footer.footer > ul {
 }
 
 
+.other-projects {
+  text-align: center;
+  background-color: #545467;
+  color: white;
+  padding: 3rem 0;
+}
+
+.project-links {
+  padding-top: 2rem;
+  font-size: 20px;
+}
+
+.project-links a {
+  padding: 0 5rem;
+  color: white;
+}
+
+.other-projects-img {
+  width: 100px;
+  display: block;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.arrow {
+  height: 10px;
+}
+
 /* NOTELY */
 
 .container-fluid {
@@ -848,6 +876,7 @@ text-align: center;
   }
 
 
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -876,6 +905,19 @@ text-align: center;
     font-size: 20px;
     margin-top: 5px;
   }
+
+  .other-projects {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .project-links {
+    padding-top: 1rem;
+    font-size: 17px;
+    line-height: 35px;
+  }
+
+
 
   /* NAV BAR */
   .desktop {
@@ -1129,7 +1171,7 @@ text-align: center;
   .learning {
     background-color: #F6F8FC;
     padding: 1rem 0;
-    margin: 1rem 0;
+    margin: 0;
   }
 
 
@@ -1389,7 +1431,7 @@ text-align: center;
   .learning {
     background-color: #F6F8FC;
     padding: 2rem 0;
-    margin: 2rem 0;
+    margin: 0;
   }
 
 
@@ -1509,9 +1551,23 @@ text-align: center;
     margin-top: 3rem;
   }
 
+  .other-projects {
+    text-align: center;
+  }
 
+  .project-links {
+    padding-top: 2rem;
+    font-size: 20px;
+  }
 
+  .project-links a {
+    padding: 0 5rem;
+    color: white;
+  }
 
+  .arrow {
+    height: 10px;
+  }
 
   .footer-title {
     font-size: 20px;
