@@ -5,6 +5,14 @@
   background-repeat: no-repeat;
 }
 
+.btn-primary {
+  background-color: #9fd258 !important;
+}
+
+ol > li::before {
+  background-color: #9fd258 !important;
+}
+
 .hero {
   background: url(../img/snd/sndcover1.png);
   height: 65%;
@@ -30,11 +38,60 @@
   padding: 0 2rem;
 }
 
+.comp-analysis {
+  background-color: inherit;
+}
+
+.userpersona {
+  padding: 0;
+}
+
+.wireframe-section {
+  background-color: white;
+}
+
+.icon {
+  height: inherit;
+  padding-bottom: 2rem;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  .hero {
+    height: 38%;
+    background-size: 700px auto;
+  }
+
+  .icon {
+    height: 70%;
+
+  }
+
+  .widget h5 {
+    line-height: normal;
+  }
+
   .project-text > ul {
     padding-bottom: 1rem;
     padding-left: 1rem;
+  }
+
+  .problem-content-snd {
+    width: 300px;
+    margin: auto;
+  }
+
+  .img-landing-snd {
+    width: 300px;
+  }
+
+  .img-usecase {
+    width: 300px;
+  }
+
+  .img-wf-snd {
+    width: 300px;
   }
 }
 
@@ -50,6 +107,24 @@
 
   }
 
+  .problem-content-snd {
+    width: 540px;
+  }
+
+  .img-landing-snd {
+    width: 540px;
+    display: block;
+    margin: auto;
+  }
+
+  .img-usecase {
+    width: 540px;
+  }
+
+  .img-wf-snd {
+    width: 90%;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -59,7 +134,21 @@
 
 /* Large devices (laptops/desktops, 992px) */
 @media only screen and (min-width: 992px) {
+  .problem-content-snd {
+    width: 800px;
+  }
 
+  .img-landing-snd {
+    width: 800px;
+  }
+
+  .img-usecase {
+    width: 800px;
+  }
+
+  .img-wf-snd {
+    max-width: 1100px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
