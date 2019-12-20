@@ -585,6 +585,7 @@ footer.footer > ul {
   margin: auto;
   height: 22%;
   padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -1025,7 +1026,6 @@ text-align: center;
 
   .widget h5 {
     font-size: 28px;
-    line-height: 0;
   }
 
   /* PROBLEM SOL */

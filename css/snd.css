@@ -94,6 +94,28 @@ ol > li::before {
   .img-wf-snd {
     width: 300px;
   }
+
+
+    .sndfinal-1 {
+      width: 300px;
+      box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    .sndfinal-2 {
+      width: 300px;
+      box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    .sndfinal-3 {
+      width: 250px;
+      box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+      display: block;
+      margin: 0 auto;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -128,8 +150,25 @@ ol > li::before {
   }
 
   .sndfinal-1 {
-    width: 50%;
+    width: 540px;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
   }
+
+  .sndfinal-2 {
+    width: 540px;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+  }
+
+  .sndfinal-3 {
+    width: 300px;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
