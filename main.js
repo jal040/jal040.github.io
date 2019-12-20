@@ -1,20 +1,3 @@
-var topbutton = document.getElementById("top");
-var mq = window.matchMedia('@media only screen and (max-width: 600px)');
-console.log(mq);
-if (mq.matches){
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-    fixedNav.style.display = "block";
-  } else {
-    fixedNav.style.display = "none";
-  }
-} else {
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-    topbutton.style.display = "block";
-  } else {
-    topbutton.style.display = "none";
-  }
-}
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {

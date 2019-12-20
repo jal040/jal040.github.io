@@ -55,6 +55,14 @@ ol > li::before {
   padding-bottom: 2rem;
 }
 
+#top {
+  background-color: rgba(159, 210, 88, .50);
+}
+
+#top:hover{
+  background-color: rgba(159, 210, 88, .80);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
