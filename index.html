@@ -22,6 +22,7 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/e490bfc80e.js" crossorigin="anonymous"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -80,7 +81,7 @@
               <h4 class="my-4" id="names">A bright designer, a proficient coder, a clever problem-solver, a passionate dog mom, and a fearless explorer. <br><br>Feel free to <a href="mailto:jamielee3136@gmail.com" target="_blank">shoot me an email</a> or <a href="https://www.linkedin.com/in/jamielee3136/" target="_blank">link up with me!</a></h4>
 
               <div class="see-work">
-                <a class="work-link" href="#work">See my latest work</a>
+                <a class="work-link" href="#work-section">See my latest work</a>
                 <i class="fas fa-caret-down"></i>
               </div>
 
@@ -89,7 +90,7 @@
 
 
 
-    <section class="work">
+    <section class="work" id="work-section">
       <div class="main-container">
         <a href="notely.html">
           <div class="work-container">
@@ -175,33 +176,9 @@
     <!-- End your project here-->
 
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript" src="main.js"></script>
+    <script src="main.js"></script>
 
-    <script>
-    function openNav() {
-      document.getElementById("myNav").style.display = "initial";
-      document.getElementById("myNav").style.height = "100%";
-    }
 
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-
-    var i = 0;
-    var txt = 'Hi, I\'m Jamie!';
-    var speed = 90;
-
-    function type(){
-      if(i<txt.length){
-        document.getElementById("name").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(type,speed);
-      }
-    }
-
-    window.onload = type();
-
-  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74530942-2"></script>
