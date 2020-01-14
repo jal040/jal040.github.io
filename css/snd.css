@@ -14,7 +14,7 @@ ol > li::before {
 }
 
 .hero {
-  background: url(../img/snd/sndcover1.png);
+  background: url(../img/snd/sndcover.png);
   height: 65%;
   background-position: center;
   background-repeat: no-repeat;
