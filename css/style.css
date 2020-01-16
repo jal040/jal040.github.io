@@ -1677,6 +1677,7 @@ text-align: center;
 
     .chapter {
       padding-top: 5rem;
+      width: 1000px;
     }
 
     .rect-survey {

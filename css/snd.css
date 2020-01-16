@@ -190,6 +190,10 @@ ol > li::before {
     width: 800px;
   }
 
+  .chapter {
+    width: 100px;
+  }
+
   .img-landing-snd {
     width: 800px;
   }
