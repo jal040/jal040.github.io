@@ -26,6 +26,13 @@
   background-color: white !important;
 }
 
+#top {
+  background-color: rgba(0, 113, 188, .50);
+}
+
+#top:hover{
+  background-color: rgba(0, 113, 188, .80);
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
