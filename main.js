@@ -22,3 +22,39 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+function openNav() {
+  document.getElementById("myNav").style.display = "initial";
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+var topbutton = document.getElementById("top");
+window.onscroll = function(){scrollFunction()};
+
+function scrollFunction() {
+  var mq = window.matchMedia('@media only screen and (max-width: 600px)');
+  if (mq.matches){
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      fixedNav.style.display = "block";
+    } else {
+      fixedNav.style.display = "none";
+    }
+  } else {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      topbutton.style.display = "block";
+    } else {
+      topbutton.style.display = "none";
+    }
+  }
+
+}
+
+function topFunction(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

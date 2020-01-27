@@ -62,12 +62,16 @@ h3 {
   font-weight: 400;
 }
 
-h4 {
-
+h5 {
+  font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
+}
+
+strong {
+  font-weight: bold;
 }
 
 button {
@@ -113,8 +117,16 @@ button {
 
 .nav-link {
   margin-left: 30px;
-  color: #455363;
-  transition: .35s;
+}
+
+.current {
+  border-top: 4px solid #3d8be4;
+  color: black !important;
+}
+
+.nav-link:hover {
+  border-top: 4px solid #3d8be4;
+
 }
 
 .mobile {
@@ -157,7 +169,7 @@ button {
   transition: all 0.2s ease-in-out;
   background-color: transparent;
   vertical-align: middle;
-  padding-top: 26px;
+  margin-top: 26px;
 }
 
 .nav-item {
@@ -461,10 +473,6 @@ footer.footer > ul {
 
 .text-center {
   text-align: center;
-}
-
-.view h3 {
-  line-height: 26px;
 }
 
 .title {
@@ -853,6 +861,7 @@ text-align: center;
   .about-h4 {
     border-left: 6px solid #3d8be4;
     padding-left: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   .rightside-content {
@@ -1257,6 +1266,27 @@ text-align: center;
     padding-right: 6px;
     padding-left: 6px;
   }
+
+  .nav-item {
+    display: in-block;
+    list-style: outside none none;
+
+  }
+
+  .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-link a:before, .nav-link a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+
+  .current {
+
+  }
+
 
   /* HOME PAGE */
   /* h4 {
