@@ -378,6 +378,7 @@ footer.footer > ul {
 .footer-title {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .footer-ul {
@@ -925,6 +926,10 @@ text-align: center;
     line-height: 35px;
   }
 
+.footer-title {
+  font-size: 18px;
+  line-height: 24px;
+}
 
 
   /* NAV BAR */
@@ -997,9 +1002,6 @@ text-align: center;
     display: grid;
   }
 
-  .footer-title {
-    text-align: center;
-  }
 
 
   /* NOTELY */
@@ -1283,15 +1285,6 @@ text-align: center;
     transition: all 0.35s ease;
   }
 
-  .current {
-
-  }
-
-
-  /* HOME PAGE */
-  /* h4 {
-    font-size: 20px;
-  } */
 
   .mb-2 {
     font-size: 40px;
@@ -1627,6 +1620,7 @@ text-align: center;
 
   .footer-title {
     font-size: 20px;
+    line-height: 26px;
   }
 
   .footer-li {
@@ -1802,6 +1796,7 @@ text-align: center;
 
   .footer-title {
     font-size: 22px;
+    line-height: 32px;
   }
 
   .footer-li {
