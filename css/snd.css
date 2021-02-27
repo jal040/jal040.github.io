@@ -13,14 +13,19 @@ ol > li::before {
   background-color: #9fd258 !important;
 }
 
+section {
+  padding-top: 90px;
+}
+
 .hero {
   background: url(../img/snd/sndcover.png);
-  height: 65%;
+  height: 85%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
+  top: 90px;
 }
 
 .snd-h2 {
@@ -66,9 +71,14 @@ ol > li::before {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  section {
+    padding-top: 0px;
+  }
+
   .hero {
     height: 38%;
     background-size: 700px auto;
+    top: 0px;
   }
 
   .icon {

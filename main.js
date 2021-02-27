@@ -22,20 +22,20 @@ $(document).ready(function(){
     } // End if
   });
 
-    // hide .navbar first
-  $(".nav").hide();
-
-  // fade in .navbar
-  $(function () {
-    $(window).scroll(function () {
-            // set distance user needs to scroll before we fadeIn navbar
-      if ($(this).scrollTop() > 600) {
-        $('.nav').fadeIn();
-      } else {
-        $('.nav').fadeOut();
-      }
-    });
-  });
+  //   // hide .navbar first
+  // $(".nav-home").hide();
+  //
+  // // fade in .navbar
+  // $(function () {
+  //   $(window).scroll(function () {
+  //           // set distance user needs to scroll before we fadeIn navbar
+  //     if ($(this).scrollTop() > 600) {
+  //       $('.nav-home').fadeIn();
+  //     } else {
+  //       $('.nav-home').fadeOut();
+  //     }
+  //   });
+  // });
 
 });
 

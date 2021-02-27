@@ -35,12 +35,13 @@ a {
 }
 
 #notely {
-  height: 100%;
+  height: 85%;
   background: url('../img/cover.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-top: 80px;
 }
 
 #work {
@@ -133,13 +134,13 @@ button {
   display: none;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
+.nav {
   background-color: rgba(255,255,255,.98);
   box-shadow: 0 1px 3px rgb(0 0 0 / 8%);
   z-index: 1000;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .navbar-nav {
@@ -219,6 +220,7 @@ button {
   align-items: center;
   justify-content: center;
   display: flex;
+  height: 700px;
   max-width: 1160px;
   padding: 0 3rem;
   margin-right: auto;
@@ -229,6 +231,7 @@ button {
   width: 100%;
   justify-content: center;
   display: inline-grid;
+  padding-top: 200px;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -269,19 +272,20 @@ button {
 
 .see-work li {
   padding: 0 40px 0 40px;
-  color: #ff5a5a;
 }
 
 .see-work a, .see-work i {
   margin: auto;
-  color: #ff5a5a;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.link:hover{
+  border-bottom: 2px solid #3d8be4;
 }
 
 .work {
@@ -855,7 +859,7 @@ text-align: center;
   }
 
   .about-container {
-    padding: 0 15px;
+    padding: 100px 15px;
   }
 
   .about-row {
@@ -899,7 +903,9 @@ text-align: center;
     background-image: linear-gradient(to right, #3d8be440 50%, #3d8be440 50%);
   }
 
-
+.project-links a{
+  display: block;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -1025,6 +1031,7 @@ text-align: center;
     height: 70%;
     background-size: 600px 500px !important;
     background: url(../img/cover.png) center center fixed;
+
   }
 
   .mask-notely {
@@ -1216,7 +1223,7 @@ text-align: center;
   }
 
   .about-container {
-    padding: 1rem 2rem;
+    padding: 7rem 2rem;
   }
 
   .about-row {
@@ -1301,6 +1308,11 @@ text-align: center;
     transition: all 0.35s ease;
   }
 
+  .link a:before, .link a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
 
   .mb-2 {
     font-size: 40px;
@@ -1508,7 +1520,7 @@ text-align: center;
     }
 
     .about-container {
-      padding: 0 15px;
+      padding: 100px 15px;
     }
 
     .about-row {
@@ -1582,11 +1594,11 @@ text-align: center;
   }
 
   .h3 {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
   .about-container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 100px 15px;
     padding-bottom: 5rem;
   }
 

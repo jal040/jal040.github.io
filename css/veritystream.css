@@ -1,6 +1,6 @@
 .hero {
-  background: url(../img/veritystream/veritystreamlogo.jpg);
-  height: 45%;
+  background: url(../img/veritystream/veritycover.png);
+  height: 85%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,6 +12,12 @@
   background-color: #0071bc !important;
 }
 
+.section {
+  width: 800px;
+  margin: auto;
+  background-color: white;
+}
+
 #top {
   background-color: rgba(0, 113, 188, .50);
 }
@@ -20,6 +26,14 @@
   background-color: rgba(0, 113, 188, .80);
 }
 
+.project-title {
+  display: block;
+  padding-top: 3rem;
+}
+
+.spacer {
+  padding-bottom: 7rem;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
