@@ -106,8 +106,8 @@ button {
 
 /* NAVIGATION  */
 .navbar {
-  box-shadow: none !important
-  font-weight: 300;
+  box-shadow: none !important;
+  font-weight: 400;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -290,7 +290,7 @@ a {
 
 .work {
   background-color: #F6F8FC;
-  padding: 5rem 0;
+  padding: 150px 2em 10px 2em;
 }
 
 .main-container{
