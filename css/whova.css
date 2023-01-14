@@ -1,5 +1,5 @@
 .hero {
-  background: url(../img/whovacover.png);
+  background: url(../img/whova/whovacover.png);
   height: 85%;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,12 +12,6 @@
   background-color: #0071bc !important;
 }
 
-.section {
-  width: 800px;
-  margin: auto;
-  background-color: white;
-}
-
 #top {
   background-color: rgba(0, 113, 188, .50);
 }
@@ -26,32 +20,89 @@
   background-color: rgba(0, 113, 188, .80);
 }
 
-.project-title {
-  display: block;
-  padding-top: 3rem;
-}
-
 .spacer {
   padding-bottom: 7rem;
 }
+
+.discovery {
+  padding-bottom: 5em;
+}
+
+.final {
+  background-color: #F6F8FC;
+}
+
+.img-txt {
+  padding: 1em 0 4em 0;
+  font-style: italic;
+  text-align: center;
+}
+
+.img-sm{
+  width: 500px;
+}
+
+.userflows {
+  margin-bottom: 0;
+}
+
+.final {
+  padding-bottom: 2em;
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+  .problem-content-whova {
+    width: 540px;
+  }
+  .img-landing-whova {
+    width: 540px;
+  }
+  .img {
+    width: 540px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px) */
 @media only screen and (min-width: 992px) {
+  .problem-content-whova {
+    width: 800px;
+  }
 
+  .img-landing-whova {
+    width: 800px;
+    padding-top: 2em;
+  }
+
+  .img {
+    width: 800px;
+  }
+
+  .img-wf {
+    display: block;
+    margin: auto;
+    width: 1000px;
+  }
+
+  .sndfinal-1 {
+    width: 45%;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+
+  }
+
+  .sndfinal-2 {
+    width: 60%;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+  }
+
+  .sndfinal-3 {
+    width: 20%;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

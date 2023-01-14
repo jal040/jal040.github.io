@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jamie Lee</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- MY ICON -->
+  <link rel="icon" href="img/about/smile.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Google Font  -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400|Nunito+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/whova.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e490bfc80e.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+
+
+<body onload="checkPassword()">
+
+  <!--Navbar-->
+  <div class="nav sticky">
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          jamie lee
+        <div class="desktop container">
+
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link current" href="index.html">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="img/resume2021.pdf" target="_blank">resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a class="nav-link" href="index.html">work</a>
+              <a class="nav-link" href="img/JamieLeeResume2020" target="_blank">resume</a>
+              <a class="nav-link" href="about.html">about</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  <div id="whova" class="hero">
+    <div class="text-center">
+      <h2 class="title perf-h2"></h2>
+    </div>
+
+  </div>
+
+
+      <section>
+        <main>
+
+          <a href="#whova"><button id="top" title="Go to top"><i class="fas fa-chevron-up"></i></button></a>
+
+    <div class="intro">
+      <article class="problem">
+        <div class="problem-content-whova">
+          <div class="project-title">Project Background</div>
+          <div class="project-text">
+            The demand for virtual events grew exponentially over the last couple years due to quarantine. Event organizers needed a dedicated online feature that would help ease the planning and the presenting of small scaled presentations. Organizing an event can be an overwhelming process involving the collection of projects and materials, communicating with the presenters and attendees, and now preparing all the correct Zoom links and invitations.
+          </div>
+          <img src="img/whova/whova_webmobileimg.png" class="img-landing-whova">
+          <div class="project-title">Project Outcome</div>
+          <div class="project-text">
+            To better support the organizers, the Artifact Center feature allows simple planning and showcasing of all types of small scaled presentations online. Organizers can manage presenters, projects, documents, video, livestream links, and more all in one space, and presenters have the ability to upload their own material, saving time and energy for all parties.
+          </div>
+          <a href="https://whova.com/blog/whova-launches-a-dedicated-function-for-poster-sessions-startup-pitches-art-galleries-and-more/" target="_blank"><button class="main-button btn btn-primary">Read Blog Post</button></a>
+        </div>
+
+      </article>
+    </div>
+
+    <!-- Discovery -->
+    <div class="section discovery">
+
+      <div class="chapter">
+        <img src="img/icons/leaf-whova.svg" class="leaf">
+        <div class="chapter-title">Research</div>
+      </div>
+
+      <div class="text-container">
+        <div class="project-title">User Goals</div>
+        <div class="project-text">First, we needed to understand what specific tasks each type of user had to complete in preparation for the event.</div>
+        <img src="img/user-goals-whova.png" class="img">
+      </div>
+
+      <div class="text-container">
+        <div class="project-title">Competition</div>
+        <div class="project-text">To better understand the project, I researched competing platforms, poster sessions, art galleries, auctions, and competitions, in the physical and virtual space.</div>
+        <img src="img/whova/whova-competitors.png" class="img">
+        <img src="img/whova/whova-research.png" class="img">
+      </div>
+
+
+    </div>
+
+    <div class="section info-arch">
+      <div class="chapter">
+        <img src="img/icons/leaf-whova.svg" class="leaf">
+        <div class="chapter-title">Iterate Iterate Iterate</div>
+      </div>
+
+      <!-- User Stories and User Flows -->
+      <div class="userflows">
+        <div class="text-container">
+          <div class="project-title">Prototyping & Testing</div>
+          <div class="project-text">Once we completed the user goals, user stories, competitive analysis, and user research, I began wireframing and high fidelity mockups. One issue we ran into was aiming too high in the beginning. To offer the most customizable options to the organizers, we originally intended to include the ability to auction items in the first release. After a few rounds of user testing, we found that this extra layer of complexity would not be beneficial to the organizers. It would only cause confusion and possible drop offs. One main goal of this feature is to make it as easy as possible to use and it was clear we were trying to provide too many options.
+          </div>
+        </div>
+        <img src="img/whova/AC/auction.png" class="img-wf">
+        <div class="img-txt">We removed the auction feature to focus on simplicity</div>
+
+      </div>
+
+      </div>
+
+      <div class="section final">
+        <div class="chapter">
+          <img src="img/icons/leaf-whova.svg" class="leaf">
+          <div class="chapter-title">Part Five | Final Product & Reflection</div>
+        </div>
+
+        <div class="img-container wireframe-container">
+          <img src="img/whova/AC/setup1.png" class="img-wf">
+          <div class="img-txt">Organizer sets the title of the Artifact Center and type of presentation</div>
+          <img src="img/whova/AC/setup2.png" class="img-wf">
+          <div class="img-txt">Organizer creates scheduled email that includes link for presenters to upload their material</div>
+          <img src="img/whova/AC/setup3.png" class="img-wf">
+          <div class="img-txt">Organizer can control what information is displayed in presenters' profiles</div>
+          <img src="img/whova/AC/artworklist.png" class="img-wf">
+          <div class="img-txt">Organizer can view all presenters and their work</div>
+          <img src="img/whova/AC/presenterlink.png" class="img-wf">
+          <div class="img-txt">Presenters are able to uplaod their material through this personalized link</div>
+          <img src="img/whova/AC/webapplist.png" class="img-wf">
+          <div class="img-txt">Web App view of presentations where attendees can interact with presentations and presenters</div>
+          <img src="img/whova/AC/mobileview.png" class="img-wf">
+          <div class="img-txt">Mobile App view of presentations</div>
+          <img src="img/whova/AC/mobileAddLink.png" class="img-wf">
+          <div class="img-txt">Presenter can also edit their profile through the Whova Mobile App</div>
+        </div>
+
+        <div class="text-container">
+          <div class="project-title">Feedback</div>
+          <div class="project-text">The reviews we received from the organizers and attendees were extremely positive, with many noting the ease of setting up and accessing the presentations. We’ve also seen an increase in retention with organizers and engagement with attendees as a direct result of releasing this feature.
+          </div>
+          <img src="img/whova/AC/feedback.png" class="img-sm">
+          <br>
+          <div class="project-title">What I learned</div>
+          <div class="project-text">One major lesson learned was the importance of understanding the requirements and conducting thorough research before diving into the design. This was my first major project, and through the support from my team, I recognized the value of deeply understanding the problem and users.
+
+          </div>
+        </div>
+      </div>
+
+      <div class="other-projects">
+        <h4>Check out my other projects!</h4>
+        <div class="project-links">
+          <a href="veritystream.html"><img src="img/veritystream/veritylogomini.png" class="other-projects-img">VerityStream <img src="img/icons/whitearrow.png" class="arrow"></a>
+        </div>
+
+      </div>
+
+
+        </main>
+
+
+      </section>
+
+
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mb-5 flex-center">
+                <div class="footer-title">
+                  <div class="footer1">Thanks for stopping by!</div>
+                  <div class="footer2">Let's connect.</div>
+                </div>
+                <ul class="footer-ul">
+                  <li class="footer-li">
+                    <a class="social" href="mailto:jamielee3136@gmail.com">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                  </li>
+                  <li class="footer-li">
+                    <a class="social" href="https://www.linkedin.com/in/jamielee3136/" target="_blank">
+                      <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                  </li>
+                  <li class="footer-li">
+                    <a class="social" href="https://dribbble.com/jama_lee" target="_blank">
+                      <i class="fab fa-dribbble"> </i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="cc">©2022 | Designed & Developed by Jamie Lee </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script type="text/javascript" src="main.js"></script>
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74530942-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74530942-2');
+
+
+  function checkPassword(){
+    var password;
+    var pass1 = "myla";
+    password = prompt('Password?', ' ');
+    if (password == pass1) {
+      continue;
+    } else {
+      window.location="http://https://jamie-lee.co/whova.html";
+    }
+  }
+
+</script>
+    </body>
+    </html>
