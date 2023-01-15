@@ -340,7 +340,7 @@ a {
 
 .work-title {
   color: #333;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.2;
   font-weight: 600;
 
@@ -348,7 +348,7 @@ a {
 
 .work-subtitle {
   color: #646466;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 24px;
 }
@@ -659,7 +659,7 @@ ol {
 
 li {
   font-size: 22px;
-  font-family: 'Nunito Sans', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
   line-height: 2.8rem;
   font-color: #333;
 }

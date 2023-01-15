@@ -60,6 +60,7 @@
   }
   .img {
     width: 540px;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
   }
 }
 
@@ -76,33 +77,16 @@
 
   .img {
     width: 800px;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
   }
 
   .img-wf {
     display: block;
     margin: auto;
     width: 1000px;
-  }
-
-  .sndfinal-1 {
-    width: 45%;
     box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
-
   }
 
-  .sndfinal-2 {
-    width: 60%;
-    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
-    margin-bottom: 2rem;
-  }
-
-  .sndfinal-3 {
-    width: 20%;
-    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
-    margin-bottom: 2rem;
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

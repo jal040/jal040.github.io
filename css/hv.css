@@ -1,0 +1,204 @@
+#hv {
+    height: 85%;
+    background: url('../img/healthvana/hvbackground.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+.hero {
+    background: url(../img/healthvana/hvcover.png);
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: #0071bc !important;
+  }
+  
+  #top {
+    background-color: rgba(0, 113, 188, .50);
+  }
+  
+  #top:hover{
+    background-color: rgba(0, 113, 188, .80);
+  }
+
+  .title {
+    padding-bottom: 20px;
+  }
+  
+  .spacer {
+    padding-bottom: 7rem;
+  }
+  
+  .discovery {
+    padding-bottom: 5em;
+  }
+  
+  .main-button {
+    margin: 2em auto;
+  }
+  
+  .img {
+    display: block;
+    margin: auto;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+  }
+
+  .img-wf {
+    display: block;
+    margin: auto;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+    width: 90%;
+  }
+
+  .img-txt {
+    padding: 1em 0 4em 0;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .img-sm {
+    width: 500px;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.06);
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .img-container {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .img-persona {
+    margin: 0;
+  }
+  
+  .userflows {
+    margin-bottom: 0;
+  }
+  
+  .final {
+    padding-bottom: 2em;
+  }
+
+  ul {
+    list-style: circle;
+    padding-left: 1em;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  ol > li::before {
+    background-color: #017F98;
+  }
+
+  .video {
+    display: block;
+    margin: auto;
+  }
+
+  .visual {
+    padding: 0;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #hv {
+        height: 70%;
+        background-size: 600px 500px !important;
+        background: url(../img/healthvana/hvbackground.png) center center fixed;
+    
+      }
+
+      .chapter {
+        padding-top: 2em;
+      }
+    
+      .title {
+        font-size: 2em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+
+      .img-responsive {
+        width: 80%;
+      }
+
+      .problem {
+        width: 300px;
+        margin: auto;
+      }
+
+      .video {
+        width: 300px;
+      }
+
+      .img {
+        width: 300px;
+        margin-top: 2em;
+      }
+
+      .img-wf {
+        margin-top: 2em;
+      }
+
+      .img-sm {
+        width: 300px;
+      }
+
+      .img-txt {
+        padding: 1em 0 0 0;
+      }
+
+      ol > li::before {
+        width: 30px;
+        height: 30px;
+      }
+}
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 600px) {
+    .problem-content-cw {
+      width: 540px;
+    }
+    .img-landing-cw {
+      width: 540px;
+    }
+    .img {
+      width: 540px;
+    }
+
+  }
+  
+  /* Large devices (laptops/desktops, 992px) */
+  @media only screen and (min-width: 992px) {
+    .problem-content-cw {
+      width: 800px;
+    }
+  
+    .img-landing-cw {
+      width: 800px;
+      padding-top: 2em;
+    }
+  
+    .img {
+      width: 800px;
+    }
+
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  
+  }
+  
