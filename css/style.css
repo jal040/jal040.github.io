@@ -27,7 +27,6 @@ a {
 
 #intro {
   height: 75%;
-  /* background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,13 +47,6 @@ a {
   height: 100%;
 }
 
-h1 {
-
-}
-
-h2 {
-
-}
 
 h3 {
   font-size: 34px;
@@ -1367,7 +1359,7 @@ text-align: center;
   }
   li {
     font-size: 17px;
-    line-height:
+
   }
 
   .problem {
