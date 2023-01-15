@@ -50,6 +50,51 @@
   padding-bottom: 2em;
 }
 
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 38%;
+    background-size: 700px auto;
+    top: -7px;
+  }
+
+  .intro {
+    padding-top: 0;
+  }
+
+  .problem {
+    width: 300px;
+    margin: auto;
+  }
+
+  .chapter {
+    padding-top: 2em;
+  }
+
+  .img-landing-whova {
+    width: 300px;
+  }
+
+  .img {
+    display: block;
+    margin: auto;
+    width: 300px;
+  }
+
+  .img-wf {
+    display: block;
+    margin: auto;
+  }
+
+  .img-sm {
+    width: 300px;
+  }
+
+  .img-txt {
+    padding: 1em 1em 2em 1em;
+  }
+
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 600px) {
   .problem-content-whova {

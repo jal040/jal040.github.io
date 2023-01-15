@@ -36,7 +36,15 @@
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .hero {
+    height: 38%;
+    background-size: 700px auto;
+    top: -7px;
+  }
 
+  .section {
+    width: 300px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
