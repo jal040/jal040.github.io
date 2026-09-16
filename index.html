@@ -1,218 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jamie Lee</title>
-  <link rel="stylesheet" href="css/reset.css">
+
   <!-- MY ICON -->
-  <link rel="icon" href="img/about/j2.png" type="image/x-icon">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" href="images/j.png" type="image/png">
 
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400|Nunito+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/e490bfc80e.js" crossorigin="anonymous"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Start your project here-->
-  <!--Navbar-->
-  <div class="nav">
-    <nav class="navbar navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-           jamie lee
-        <div class="desktop container">
+  <div class="scrap-page">
 
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link current" href="index.html">work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="img/JamieLeeCVSep2024.pdf" target="_blank">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">about</a>
-            </li>
-          </ul>
-        </div>
+    <!-- <img class="deco tape-corner" src="images/tape.png" alt=""> -->
 
-        <div class="mobile">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a class="nav-link" href="index.html">work</a>
-              <a class="nav-link" href="img/JamieLeeCVSep2024.pdf" target="_blank">CV</a>
-              <a class="nav-link" href="about.html">about</a>
-            </div>
-          </div>
-        </div>
+    <!-- <div class="clip" aria-hidden="true">
+      <svg viewBox="0 0 120 150" width="70" height="88">
+        <defs>
+          <linearGradient id="woodGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#9c6a3f"/>
+            <stop offset="0.5" stop-color="#6b4526"/>
+            <stop offset="1" stop-color="#3c2716"/>
+          </linearGradient>
+        </defs>
+        <rect x="48" y="4" width="24" height="34" rx="6" fill="url(#woodGrad)"/>
+        <circle cx="60" cy="20" r="6" fill="#efe6d8"/>
+        <path d="M20 34 h80 a6 6 0 0 1 6 6 v56 a10 10 0 0 1 -10 10 h-72 a10 10 0 0 1 -10 -10 v-56 a6 6 0 0 1 6 -6 z" fill="url(#woodGrad)"/>
+        <rect x="14" y="70" width="92" height="8" fill="#000000" opacity="0.12"/>
+      </svg>
+    </div> -->
 
-      </div>
-    </nav>
+    <!-- <img class="deco photo" src="images/me_polaroid.png" alt="Photo of Jamie Lee">
+
+    <img class="deco flower" src="images/flower.png" alt="">
+
+    <img class="deco bunny" src="images/miffy.png" alt=""> -->
+
+    <div class="content">
+
+      <img class="deco photo" src="images/me_polaroid.png" alt="Photo of Jamie Lee">
+
+      <h1>I&rsquo;m Jamie Lee</h1>
+
+      <p>I am a HCI researcher and a third year PhD student at University of California, Irvine, advised by Dr. Yunan Chen.</p>
+
+      <p>I study how individuals perceive and engage with digital health technologies. My research centers on how youth interact with emerging AI systems in health contexts.</p>
+
+      <p>I&rsquo;m drawn to participatory and creative methods, including speculative design, workshops, design probes, and interviews, that bring young people into the research process and ensure their voices inform the work.</p>
+
+    </div>
+
+    <div class="contact-row">
+      <a href="https://www.linkedin.com/in/jamielee3136/" aria-label="LinkedIn"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+      <a href="https://scholar.google.com/citations?user=QrssnH0AAAAJ&hl=en" aria-label="Google Scholar"><img src="images/google_scholar_icon.png" alt="Google Scholar"></a>
+      <a href="mailto:jamiel9@uci.edu" aria-label="Email"><img src="images/mail_icon.png" alt="Email"></a>
+    </div>
+
   </div>
 
-
-
-
-
-
-
-  <section class="work" id="work-section">
-    <div class="main-container">
-
-      <a href="healthvana.html">
-        <div class="work-container">
-          <div class="work-preview">
-            <img src="img/home-healthvana.png">
-          </div>
-          <div class="work-details">
-            <div class="year">2021 - 2022 <span>&#183;</span> Research & Design</div>
-            <div class="work-title">Clinical Workflow Messaging</div>
-            <div class="work-subtitle">Healthvana, a Patient Communication Platform</div>
-            <div class="work-body">As the "last mile" in healthcare, we provide actionable health information and deliver better care at lower costs.</div>
-          </div>
-        </div>
-      </a>
-
-      <a href="whovaproject.html">
-        <div class="work-container">
-          <div class="work-preview">
-            <img src="img/home-whova.png">
-          </div>
-          <div class="work-details">
-            <div class="year">2020 - 2021 <span>&#183;</span> Design</div>
-            <div class="work-title">Artifact Center</div>
-            <div class="work-subtitle">Whova, Award Winning Event Management Software</div>
-            <div class="work-body">Taking over the virtual event industry with creative thinking. Designing for web-based interface, mobile app, and web app platforms.</div>
-          </div>
-        </div>
-      </a>
-
-
-      <!-- <a href="veritystream.html">
-        <div class="work-container">
-          <div class="work-preview">
-            <img src="img/home-veritystream.png">
-          </div>
-          <div class="work-details">
-            <div class="year">2018 - 2020 <span>&#183;</span> Design</div>
-            <div class="work-title">VerityStream</div>
-            <div class="work-subtitle">Transforming Provider Experience</div>
-            <div class="work-body">Delivering enterprise-class solutions that is transforming credentialing, enrollment, privileging, and evaluation for healthcare organizations across America.</div>
-          </div>
-        </div>
-      </a> -->
-
-      <a href="notely.html">
-        <div class="work-container">
-          <div class="work-preview">
-            <img src="img/home-notely.png">
-          </div>
-          <div class="work-details">
-            <div class="year">2019 <span>&#183;</span> Design & Branding</div>
-            <div class="work-title">Notely</div>
-            <div class="work-subtitle">A simple note-taking app</div>
-            <div class="work-body">Designed a SaaS product that makes it that easy to take down notes, save content, and collaborate with friends and family.</div>
-          </div>
-        </div>
-      </a>
-
-      <a href="snd.html">
-        <div class="work-container">
-          <div class="work-preview">
-            <img src="img/home-snd.png">
-          </div>
-          <div class="work-details">
-            <div class="year">2017 <span>&#183;</span> Redesign, Rebranding & Development</div>
-            <div class="work-title">Sunday Night Dinner</div>
-            <div class="work-subtitle">Craft Services Done Right!</div>
-            <div class="work-body">Redesigned and developed the website for a craft services company based in Hollywood. Increased traffic and sales by 20%.</div>
-          </div>
-        </div>
-      </a>
-
-      <a href="performance.html">
-        <div class="work-container">
-          <div class="work-preview">
-            <img src="img/home-perform.png">
-          </div>
-          <div class="work-details">
-            <div class="year">2017 <span>&#183;</span> User Research & Redesign</div>
-            <div class="work-title">Performance.gov</div>
-            <div class="work-subtitle">A White House website</div>
-            <div class="work-body">Redesigned Performance.gov, which informs the public of the Federal agencies’ progress in cutting waste, streamlining the government, and improving performance.</div>
-          </div>
-        </div>
-      </a>
-
-
-    </div>
-  </section>
-
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mb-5 flex-center">
-            <div class="footer-title">
-              <div class="footer1">Thanks for stopping by!</div>
-              <div class="footer2">Let's connect.</div>
-            </div>
-            <ul class="footer-ul">
-              <li class="footer-li">
-                <a class="social" href="mailto:jamielee3136@gmail.com">
-                  <i class="far fa-envelope"></i>
-                </a>
-              </li>
-              <li class="footer-li">
-                <a class="social" href="https://www.linkedin.com/in/jamielee3136/" target="_blank">
-                  <i class="fab fa-linkedin-in"> </i>
-                </a>
-              </li>
-              <li class="footer-li">
-                <a class="social" href="https://dribbble.com/jama_lee" target="_blank">
-                  <i class="fab fa-dribbble"> </i>
-                </a>
-              </li>
-            </ul>
-            <div class="cc">©2022 | Designed & Developed by Jamie Lee </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- End your project here-->
-
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript" src="main.js"></script>
-
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74530942-2"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-74530942-2');
-</script>
 </body>
 </html>
