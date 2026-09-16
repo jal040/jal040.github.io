@@ -6,22 +6,46 @@
   --ink: #241f18;
 }
 
-body {
+/* body {
   margin: 0;
   color: var(--ink);
   font-family: "Lora", Georgia, serif;
   background: #ffffff;
-}
+} */
 
 /* .scrap-page is locked to the exact aspect ratio of portfolio.png
    (4398 x 3100) and scales as one unit — as it grows/shrinks with the
    viewport, everything positioned inside it by percentage (the text)
    scales and moves right along with the art. */
-.scrap-page {
+/* .scrap-page {
   position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  aspect-ratio: 4398 / 3100;
+  background-image: url("images/portfolio.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  container-type: inline-size;
+} */
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  color: var(--ink);
+  font-family: "Lora", Georgia, serif;
+  background: #ffffff;
+}
+
+.scrap-page {
+  position: relative;
+  width: min(100%, calc((100vh - 48px) * 4398 / 3100), 1200px);
   aspect-ratio: 4398 / 3100;
   background-image: url("images/portfolio.png");
   background-size: 100% 100%;
@@ -84,6 +108,40 @@ body {
   display: none;
 }
 
+.cc-text {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: clamp(9px, 1.85cqw, 12px);
+  color: var(--ink);
+  opacity: 0.55;
+  white-space: nowrap;
+}
+
+a {
+  color: #3F2104;
+}
+
+.highlight-blue {
+  background: rgba(160, 195, 255, .3);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.highlight-yellow {
+  background-color: #f7d7aa96;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.highlight-green {
+  background: rgba(208, 215, 168, .6);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
 /* ---- mobile fallback ----
    portfolio.png is a wide landscape scene; locked to its aspect ratio,
    .scrap-page gets too short on a phone to hold three paragraphs of
@@ -95,6 +153,9 @@ body {
     background-image: url("images/mobile_paper_bkg.png");
     background-repeat: repeat;
     background-size: 700px auto;
+    display: block;
+    min-height: 0;
+    padding: 0;
   }
 
   .scrap-page {
@@ -120,7 +181,7 @@ body {
   .contact-row {
     gap: 32px;
     margin-top: 0px;
-    bottom: -8%;
+    bottom: -2%;
   }
 
   .contact-row img {
@@ -132,5 +193,10 @@ body {
     display: block;
     width: 45%;
     margin: 0 auto 12px auto;
+  }
+
+  .cc-text {
+    bottom: -10%;
+    font-size: 12px;
   }
 }
