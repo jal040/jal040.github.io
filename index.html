@@ -5,64 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jamie Lee</title>
 
-  <!-- MY ICON -->
   <link rel="icon" href="images/j.png" type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
 
-  <div class="scrap-page">
+  <main class="page">
 
-    <!-- <img class="deco tape-corner" src="images/tape.png" alt=""> -->
+    <img class="deco deco-tape" src="images/tape.png" alt="">
 
-    <!-- <div class="clip" aria-hidden="true">
-      <svg viewBox="0 0 120 150" width="70" height="88">
-        <defs>
-          <linearGradient id="woodGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#9c6a3f"/>
-            <stop offset="0.5" stop-color="#6b4526"/>
-            <stop offset="1" stop-color="#3c2716"/>
-          </linearGradient>
-        </defs>
-        <rect x="48" y="4" width="24" height="34" rx="6" fill="url(#woodGrad)"/>
-        <circle cx="60" cy="20" r="6" fill="#efe6d8"/>
-        <path d="M20 34 h80 a6 6 0 0 1 6 6 v56 a10 10 0 0 1 -10 10 h-72 a10 10 0 0 1 -10 -10 v-56 a6 6 0 0 1 6 -6 z" fill="url(#woodGrad)"/>
-        <rect x="14" y="70" width="92" height="8" fill="#000000" opacity="0.12"/>
-      </svg>
-    </div> -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>I&rsquo;m Jamie Lee</h1>
 
-    <!-- <img class="deco photo" src="images/me_polaroid.png" alt="Photo of Jamie Lee">
+        <p>I am a HCI researcher and a fourth year PhD student at <a href="https://informatics.ics.uci.edu/" target="_blank" rel="noopener">University of California, Irvine</a>, advised by <a href="https://ics.uci.edu/~yunanc/" target="_blank" rel="noopener">Dr. Yunan Chen</a>.</p>
 
-    <img class="deco flower" src="images/flower.png" alt="">
+        <p>Broadly, my research explores how individuals perceive and engage with digital health technologies. Specifically, I study how <span class="hl hl-blue">youth interact with emerging AI systems for health management and socioemotional support,</span> and how those systems can be designed to better serve them.</p>
 
-    <img class="deco bunny" src="images/miffy.png" alt=""> -->
+        <p>I use <span class="hl hl-orange">participatory and creative methods,</span> including speculative design, design fiction, and interviews, to explore <span class="hl hl-orange">&ldquo;why&rdquo; questions,</span> and <span class="hl hl-green">quantitative methods</span> to examine <span class="hl hl-green">&ldquo;what&rsquo;s happening&rdquo; questions.</span></p>
+      </div>
 
-    <div class="content">
+      <img class="hero-photo" src="images/me_polaroid.png" alt="Photo of Jamie Lee">
+    </section>
 
-      <img class="deco photo" src="images/me_polaroid.png" alt="Photo of Jamie Lee">
+    <section class="publications">
+      <img class="deco deco-bunny" src="images/miffy.png" alt="">
+      <img class="deco deco-flower" src="images/flower.png" alt="">
 
-      <h1>I&rsquo;m Jamie Lee</h1>
+      <h2>Publications</h2>
 
-      <p>I am a HCI researcher and a fourth year PhD student at <a href="https://informatics.ics.uci.edu/">University of California, Irvine</a>, advised by <a href="https://ics.uci.edu/~yunanc/">Dr. Yunan Chen</a>.</p>
+      <!-- Replace each href="#" with that paper's DOI link. -->
+      <ul class="pub-list">
 
-      <p>Broadly, my research explores how individuals perceive and engage with digital health technologies. Specifically, I study how <span class="highlight-blue">youth interact with emerging AI systems for health management and socioemotional support</span>, and how those systems can be designed to better serve them.</p>
+        <li class="pub">
+          <h3 class="pub-title">From Efficiency to Meaning: Adolescents&rsquo; Envisioned Role of AI in Health Management</h3>
+          <p class="pub-authors"><strong>Jamie Lee</strong>, Kyuha Jung, Cecilia Lee, Lauren MacDonnell, Jessica Kim, Daniel Otterson, Erin Newman, Emilie Chow, Yunan Chen</p>
+          <div class="pub-meta">
+            <span class="pub-venue">CHI 2026</span>
+            <a class="pub-doi" href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
 
-      <p>I use <span class="highlight-yellow">participatory and creative methods</span>, including speculative design, design fiction, and interviews, to explore <span class="highlight-yellow">"why" questions</span>, and <span class="highlight-green">quantitative methods</span> to examine <span class="highlight-green">"what's happening" questions.</span></p>
+        <li class="pub">
+          <h3 class="pub-title">Care Workers&rsquo; Risk Work: How Nannies Manage Invisible Threats in Employers&rsquo; Homes</h3>
+          <p class="pub-authors">Seungmin Jeong, <strong>Jamie Lee</strong>, Myeong Lee, Yunan Chen</p>
+          <div class="pub-meta">
+            <span class="pub-venue">CHI 2026</span>
+            <a class="pub-doi" href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
 
-    </div>
+        <li class="pub">
+          <h3 class="pub-title">Navigating the Gig Economy as a Caregiver: Understanding the Dual Nature of Nanny Work</h3>
+          <p class="pub-authors">Seungmin Jeong, <strong>Jamie Lee</strong>, Yunan Chen</p>
+          <div class="pub-meta">
+            <span class="pub-venue">CSCW 2025</span>
+            <a class="pub-doi" href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
 
-    <div class="contact-row">
+        <li class="pub">
+          <h3 class="pub-title">User Needs Assessment of ASTHMAXcel Voice: A Novel Mobile Health App for Asthma Management</h3>
+          <p class="pub-authors"><strong>Jamie Lee</strong>, Yunan Chen, Kai Zheng, Juliana Rodriguez, Jonathan Feldman, Sunit P Jariwala</p>
+          <div class="pub-meta">
+            <span class="pub-venue">MedInfo 2025</span>
+            <a class="pub-doi" href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
+
+        <li class="pub">
+          <h3 class="pub-title">Understanding Adolescents&rsquo; Perceptions of Benefits and Risks in Health AI Technologies through Design Fiction</h3>
+          <p class="pub-authors"><strong>Jamie Lee</strong>, Kyuha Jung, Erin Gregg Newman, Emilie Chow, Yunan Chen</p>
+          <div class="pub-meta">
+            <span class="pub-venue">CHI 2025</span>
+            <a class="pub-doi" href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
+
+        <li class="pub">
+          <h3 class="pub-title">Mobile Apps for Children&rsquo;s Health and Wellbeing: Design Features and Future Opportunities</h3>
+          <p class="pub-authors"><strong>Jamie Lee*</strong>, Zhaoyuan Su*, Yunan Chen</p>
+          <div class="pub-meta">
+            <span class="pub-venue">AMIA 2024</span>
+            <a class="pub-doi" href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <nav class="contact" aria-label="Contact links">
+      <img class="deco deco-snoopy" src="images/snoopy-removebg-preview.png" alt="">
       <a href="https://www.linkedin.com/in/jamielee3136/" aria-label="LinkedIn"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
-      <a href="https://scholar.google.com/citations?user=QrssnH0AAAAJ&hl=en" aria-label="Google Scholar"><img src="images/google_scholar_icon.png" alt="Google Scholar"></a>
+      <a href="https://scholar.google.com/citations?user=QrssnH0AAAAJ&amp;hl=en" aria-label="Google Scholar"><img src="images/google_scholar_icon.png" alt="Google Scholar"></a>
       <a href="mailto:jamiel9@uci.edu" aria-label="Email"><img src="images/mail_icon.png" alt="Email"></a>
-    </div>
-    <p class="cc-text">&copy; 2026 Jamie Lee</p>
+    </nav>
 
-  </div>
-
+  </main>
 
 </body>
 </html>

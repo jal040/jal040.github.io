@@ -1,0 +1,300 @@
+/* Portfolio v2. Every size and space is in em, so the whole page scales
+   from one font size. Spacing steps: 1em (paragraphs), 2em (list items),
+   4em (major blocks and page edges). */
+
+:root {
+  --ink: #241f18;
+  --link: #3f2104;
+  --accent: #b8c098;
+  --page-bg: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background: var(--page-bg); */
+  background: #FDF4E4;
+  color: var(--ink);
+  font-family: "Lora", Georgia, serif;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+a:focus-visible {
+  outline: 0.15em solid var(--ink);
+  outline-offset: 0.2em;
+}
+
+/* ---- page frame ---- */
+
+/* Equal side gutters keep all text clear of the photo, the stickers, and
+   the edges. --gutter is the width reserved on each side for stickers.
+   The grid gap sets the same 4em space between every major block. */
+.page {
+  --gutter: clamp(2em, 11vw, 9em);
+  position: relative;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 10em var(--gutter);
+  display: grid;
+  gap: 4em;
+}
+
+.page > * {
+  min-width: 0;
+}
+
+/* ---- stickers: each sits inside a side gutter, never over text ---- */
+
+.deco {
+  position: absolute;
+  display: block;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.publications,
+.contact {
+  position: relative;
+}
+
+.deco-tape {
+  top: 1em;
+  left: 0.25em;
+  width: calc(var(--gutter) - 0.5em);
+}
+
+.deco-bunny {
+  top: 2.5em;
+  left: calc(0.75em - var(--gutter));
+  width: calc((var(--gutter) - 1.5em) * 0.6);
+}
+
+.deco-flower {
+  top: 18em;
+  right: calc(0.75em - var(--gutter));
+  width: calc(var(--gutter) - 1.5em);
+}
+
+.deco-snoopy {
+  top: -3.5em;
+  left: calc(0.75em - var(--gutter));
+  width: calc((var(--gutter) - 1.5em) * 0.8);
+}
+
+/* ---- hero ---- */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20em;
+  column-gap: 4em;
+  align-items: start;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 0.75em;
+  text-wrap: balance;
+}
+
+.hero p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0 0 1em;
+  text-wrap: pretty;
+}
+
+.hero p:last-child {
+  margin-bottom: 0;
+}
+
+.hero p a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.hero p a:hover {
+  text-decoration-thickness: 0.1em;
+}
+
+/* Highlights: padding is in em so it scales with the text, and
+   box-decoration-break repeats it on both ends of a wrapped highlight.
+   The 1.6 line-height above keeps wrapped lines from touching. */
+.hl {
+  padding: 0.12em 0.5em;
+  border-radius: 0.3em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.hl-blue {
+  background: rgba(160, 195, 255, 0.3);
+}
+
+.hl-orange {
+  background: rgba(247, 215, 170, 0.59);
+}
+
+.hl-green {
+  background: rgba(208, 215, 168, 0.6);
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---- publications ---- */
+
+.publications h2 {
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 1em;
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2em;
+}
+
+.pub-title {
+  font-size: 1.15em;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0 0 0.4em;
+  text-wrap: pretty;
+}
+
+.pub-authors {
+  font-size: 0.9em;
+  line-height: 1.45;
+  margin: 0 0 0.75em;
+}
+
+.pub-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  font-size: 0.9em;
+}
+
+.pub-venue {
+  background: var(--accent);
+  border-radius: 0.4em;
+  padding: 0.2em 0.65em;
+}
+
+.pub-doi {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  color: inherit;
+  font-weight: 700;
+}
+
+.pub-doi::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background: currentColor;
+  -webkit-mask: var(--external-icon) center / contain no-repeat;
+  mask: var(--external-icon) center / contain no-repeat;
+  --external-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpath d='M15 3h6v6'/%3E%3Cpath d='M10 14 21 3'/%3E%3C/svg%3E");
+}
+
+/* ---- contact ---- */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 4em;
+  border-top: 1px solid var(--accent);
+}
+
+.contact a img {
+  display: block;
+  width: 3em;
+  height: 3em;
+}
+
+.contact a:hover img {
+  opacity: 0.8;
+}
+
+/* ---- tablet: photo moves above the text, stickers hide ---- */
+
+@media (max-width: 64em) {
+  .page {
+    padding: 3em 2em;
+    gap: 3em;
+  }
+
+  .deco {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 2em;
+  }
+
+  .hero-photo {
+    order: -1;
+    width: 16em;
+    max-width: 100%;
+    justify-self: center;
+  }
+
+  .contact {
+    padding-top: 3em;
+  }
+}
+
+/* ---- phone ---- */
+
+@media (max-width: 36em) {
+  .page {
+    padding: 2.5em 1.5em;
+    gap: 2.5em;
+  }
+
+  .hero h1 {
+    font-size: 2.25em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .publications h2 {
+    font-size: 1.5em;
+  }
+
+  .pub-title {
+    font-size: 1.05em;
+  }
+
+  .contact {
+    padding-top: 2.5em;
+  }
+
+  .contact a img {
+    width: 2.75em;
+    height: 2.75em;
+  }
+}
